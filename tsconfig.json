@@ -1,28 +1,30 @@
 {
-    "ts-node": {
-      "files": true
-    },
-    "exclude": [
-      "dist",
-      "node_modules",
-      "packages"
+  "ts-node": {
+    "files": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "packages"
+  ],
+  "include": [
+    "./**/*.ts",
+    "server.js",
+    "src/components/header/header.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "typeRoots": [
+      "./node_modules/@types"
     ],
-    "include": [
-      "./**/*.ts"
-  , "server.js"  ],
-    "compilerOptions": {
-      "outDir": "./dist/",
-      "target": "es2016",
-      "module": "commonjs",
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "baseUrl": ".",
-      "typeRoots": [
-        "./node_modules/@types"
-      ],
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
-      "sourceMap": true,
-      "skipLibCheck": true,
-    }
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
   }
+}

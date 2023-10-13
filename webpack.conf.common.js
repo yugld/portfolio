@@ -24,13 +24,14 @@ module.exports = {
       patterns: [{ from: 'static' }],
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.pug',
       inject: true,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
       },
       chunksSortMode: 'auto',
+      filename: "index.html",
     }),
   ],
   module: {

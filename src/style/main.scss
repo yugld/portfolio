@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+
+body {
+  background: $color__primary;
+  color: $text-color__primary;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 300vh;
+  overflow-x: hidden;
+
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+@import '../components/components';

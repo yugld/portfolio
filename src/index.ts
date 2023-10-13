@@ -1,7 +1,4 @@
-function component(text) {
-  const element = document.createElement('h1');
-  element.textContent = text;
-  return element;
-}
+// @ts-nocheck
+import './style/main.scss';
+import './components/header/header';
 
-document.body.prepend(component('Проект собран на Webpack'));
