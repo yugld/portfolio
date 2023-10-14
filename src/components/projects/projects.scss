@@ -1,0 +1,69 @@
+section.projects {
+    padding: 80px 0;
+    h2 {
+      text-align: center;
+      padding-bottom: 45px;
+    }
+    .cards-container {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+      gap: 40px;
+      .project_card {
+        @include flex(column, center, center);
+        width: 300px;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid $border_light;
+        border-radius: 4px;
+        gap: 15px;
+        align-self: stretch;
+        transition: all 0.15s ease-in;
+        font-size: 17px;
+  
+        div.card_img {
+          display: flex;
+          justify-content: center;
+        }
+  
+        img {
+          width: 80%;
+        }
+  
+        p {
+          color: $text-color__secondary;
+          text-align: center;
+        }
+  
+        &:hover {
+          box-shadow: 0px 2px 16px #c6f547;
+        }
+  
+        .card_links {
+          width: 100%;
+          @include flex(row, space-between, center);
+          text-underline-offset: 2px;
+        }
+  
+        .card_links a {
+          transition: 0.2s ease-in;
+        }
+  
+        .card_links a:hover {
+          color: $color__hover;
+        }
+      }
+    }
+  }
+  section.servicos {
+    padding: 80px 0;
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .cards-container {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+  
