@@ -1,12 +1,14 @@
 section.projects {
     padding: 80px 0;
+
     .cards-container {
       @include flex(row, center, center);
       flex-wrap: wrap;
       gap: 40px;
+
       .project_card {
         @include flex(column, center, center);
-        width: 300px;
+        width: 333px;
         padding: 20px;
         background-color: white;
         border: 1px solid $border_light;
