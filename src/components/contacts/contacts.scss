@@ -1,7 +1,7 @@
 section.contact {
     padding: 80px 0;
 
-    .container {
+    .cards-container {
       @include flex(row, space-around, center);
       gap: 20px;
       flex-wrap: wrap;
