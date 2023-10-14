@@ -1,0 +1,32 @@
+section.contact {
+    padding: 80px 0;
+
+    .container {
+      @include flex(row, space-around, center);
+      gap: 20px;
+      flex-wrap: wrap;
+
+      .contact_card {
+        min-width: 150px;
+        @include flex(column, center, center);
+        gap: 10px;
+  
+        &:hover .contact_icon {
+          box-shadow: 0 0 0 2px $color__hover;
+          transform: scale(1.1);
+          background-color: $color__hover;
+        }
+      }
+      .contact_icon {
+        background-color: $text-color__primary;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 50%;
+        color: $color__primary;
+        transition: 0.35s ease-in;
+        @include flex(row, center, center);
+      }
+    }
+}
