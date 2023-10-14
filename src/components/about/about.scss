@@ -6,10 +6,6 @@ section.about {
       @include flex(column, center, center);
       gap: 20px;
 
-      h2 {
-        font-size: 36px;
-        line-height: 40px;
-      }
       p {
         font-size: 20px;
         color: $text-color__secondary;
