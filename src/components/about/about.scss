@@ -1,6 +1,13 @@
 section.about {
   padding: 80px 80px;
   margin: 0 auto;
+  
+  h1{
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    padding: 70px 0;
+  }
   .container {
     .about__header {
       @include flex(column, center, center);
