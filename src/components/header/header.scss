@@ -1,5 +1,11 @@
 .header {
-  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 25px 0;
+  background-color: $color__primary;
+  border-bottom: 1px solid $border_light;
 
   .nav {
     display: flex;
@@ -144,15 +150,18 @@
 
 @media (max-width: 900px) {
   .header {
-    padding-top: 15px;
+    padding: 15px 0;
     z-index: 150;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
     margin-top: 0;
     margin-bottom: 0;
+
+    .logo {
+    font-size: 26px;
+  }
 
     .hamburger {
       display: block;

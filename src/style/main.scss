@@ -8,7 +8,6 @@ body {
   color: $text-color__primary;
   font-family: Inter, sans-serif;
   font-size: 16px;
-  height: 300vh;
   overflow-x: hidden;
   &.hidden {
     overflow: hidden;
@@ -16,8 +15,8 @@ body {
 }
 
 h2 {
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 36px;
   text-align: center;
   padding-bottom: 70px;
 }
@@ -32,6 +31,10 @@ a {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+section {
+  border-bottom: 1px solid $border_light;
 }
 
 
