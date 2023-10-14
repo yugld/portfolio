@@ -1,22 +1,27 @@
 @import 'reset';
 @import 'fonts';
 @import 'variables';
+@import 'mixin';
+
 
 body {
-  background: $color__primary;
   color: $text-color__primary;
   font-family: Inter, sans-serif;
   font-size: 16px;
   height: 300vh;
   overflow-x: hidden;
-
   &.hidden {
     overflow: hidden;
   }
 }
 
+h2 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
 a {
-  color: #000;
+  color: $text-color__primary;
   text-decoration: none;
 }
 
