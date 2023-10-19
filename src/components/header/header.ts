@@ -9,6 +9,7 @@ document.querySelector(".menu_item").addEventListener("click", function () {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
+        document.querySelector(".header").classList.toggle("mobile");
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
